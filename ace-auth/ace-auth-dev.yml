@@ -16,7 +16,7 @@ spring:
     minIdle: 1
     timeBetweenEvictionRunsMillis: 60000
     minEvictableIdleTimeMillis: 300000
-    validationQuery: select 'x'
+    validationQuery: select 1
     testWhileIdle: true
     testOnBorrow: false
     testOnReturn: false
@@ -31,7 +31,7 @@ mybatis:
 jwt:
   token-header: Authorization
   expire: 14400
-  rsa-secret: xx1WET12^%3^(WE45
+  rsa-secret: "xx1WET12^%3^(WE45"
 
 client:
   id: ace-auth
