@@ -13,14 +13,16 @@ spring:
     default-property-inclusion: non_null
   redis:
     database: 0
-    host: ${REDIS_HOST:192.168.11.234}
-    port: ${REDIS_PORT:6379}
+    host: 192.168.11.234
+    port: 6379
     password: 123456
     pool:
-      max-active: 300
+      max-active: 8
       max-idle: 100
       max-wait: 1000
-  rabbitmq:
+      max-idle: 8
+      min-idle: 0
+      timeout: 3000
     host: ${RABBIT_MQ_HOST:192.168.11.234}
     port:  ${RABBIT_MQ_PORT:5672}
     username: guest
