@@ -16,7 +16,9 @@ spring:
     host: ${REDIS_HOST:192.168.11.234}
     port: ${REDIS_PORT:6379}
     pool:
-    max-active: 20
+      maxActive: 300
+      maxIdle: 100
+      maxWait: 1000
     password: 123456
   rabbitmq:
     host: ${RABBIT_MQ_HOST:192.168.11.234}
