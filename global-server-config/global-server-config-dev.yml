@@ -2,9 +2,8 @@
 spring:
   cloud:
     nacos:
-      config:
+      discovery:
         server-addr: 192.168.11.234:8848
-        file-extension: yaml
     sentinel:
       transport:
         dashboard: 192.168.11.234:8088
