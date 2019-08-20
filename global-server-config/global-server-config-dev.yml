@@ -12,14 +12,14 @@ spring:
     time-zone: GMT+8
     default-property-inclusion: non_null
   redis:
-    database: 2
+    database: 0
     host: ${REDIS_HOST:192.168.11.234}
     port: ${REDIS_PORT:6379}
-    pool:
-      maxActive: 300
-      maxIdle: 100
-      maxWait: 1000
     password: 123456
+    pool:
+      max-active: 300
+      max-idle: 100
+      max-wait: 1000
   rabbitmq:
     host: ${RABBIT_MQ_HOST:192.168.11.234}
     port:  ${RABBIT_MQ_PORT:5672}
