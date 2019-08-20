@@ -1,6 +1,20 @@
 server:
   port: 8762
 
+#redis-cache 相关
+redis:
+  database: 0
+  enable: true
+  host: ${REDIS_HOST:localhost}
+  port:  ${REDIS_PORT:6379}
+  password: 123456
+  timeout: 2000
+  # 服务或应用名
+  sysName: ace-admin
+  pool:
+    maxActive: 300
+    maxIdle: 100
+    maxWait: 1000
 sample:
   zipkin:
     # When enabled=false, traces log to the console. Comment to send to zipkin
