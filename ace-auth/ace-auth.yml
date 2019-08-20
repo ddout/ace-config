@@ -21,3 +21,4 @@ client:
 logging:
   level:
     com.github.wxiaoqi.security.auth: DEBUG
+
