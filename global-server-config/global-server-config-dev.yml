@@ -22,7 +22,6 @@ spring:
       legacy:
         enabled: true
 
-
 feign:
   httpclient:
     enabled: false
