@@ -23,6 +23,7 @@ spring:
       max-idle: 8
       min-idle: 0
       timeout: 3000
+  rabbitmq:
     host: ${RABBIT_MQ_HOST:192.168.11.234}
     port:  ${RABBIT_MQ_PORT:5672}
     username: guest
