@@ -1,4 +1,6 @@
-
+aaa:
+  dss:
+    cc: 11
 
 spring:
   datasource:
