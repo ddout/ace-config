@@ -1,6 +1,15 @@
 server:
   port: 9777
 
+spring:
+  redis:
+    database: 2
+    host: ${REDIS_HOST:192.168.11.234}
+    port: ${REDIS_PORT:6379}
+    pool:
+    max-active: 20
+    password: 123456
+
 mybatis:
   basepackage: com.github.wxiaoqi.security.auth.mapper
   xmlLocation: classpath:mapper/**/*.xml

@@ -11,13 +11,6 @@ spring:
     date-format: yyyy-MM-dd HH:mm:ss
     time-zone: GMT+8
     default-property-inclusion: non_null
-  redis:
-    database: 2
-    host: ${REDIS_HOST:192.168.11.234}
-    port: ${REDIS_PORT:6379}
-    pool:
-    max-active: 20
-    password: 123456
   rabbitmq:
     host: ${RABBIT_MQ_HOST:192.168.11.234}
     port:  ${RABBIT_MQ_PORT:5672}
