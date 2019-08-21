@@ -58,6 +58,13 @@ spring:
           - Path=/api/admin/**
           filters:
           - StripPrefix=2
+        - id: ace-pms
+          uri: lb://ace-pms
+          order: 8002
+          predicates:
+          - Path=/api/pms/**
+          filters:
+          - StripPrefix=2
 
 gate:
   ignore:
