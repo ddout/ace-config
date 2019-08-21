@@ -5,7 +5,7 @@ server:
 redis:
   database: 0
   enable: true
-  host: ${REDIS_HOST:localhost}
+  host: ${REDIS_HOST:192.168.11.234}
   port:  ${REDIS_PORT:6379}
   password: 123456
   timeout: 2000
